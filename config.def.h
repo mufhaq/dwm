@@ -59,7 +59,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* lockscreen */
-static const char *lock[] = { "/usr/bin/betterlockscreen", "-l" }
+static const char *lock[] = { "/usr/bin/betterlockscreen", "-l" };
 
 /* volume */
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%",     NULL };
