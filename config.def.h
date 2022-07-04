@@ -58,6 +58,9 @@ static const Layout layouts[] = {
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
+/* lockscreen */
+static const char *lock[] = { "/usr/bin/betterlockscreen", "-l" }
+
 /* volume */
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%",     NULL };
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%",     NULL };
@@ -114,6 +117,7 @@ static Key keys[] = {
 	{ 0,                            XF86XK_AudioMicMute,        spawn, {.v = mutemic } },
 	{ 0,                            XF86XK_MonBrightnessUp,     spawn, {.v = upbright } },
 	{ 0,                            XF86XK_MonBrightnessDown,   spawn, {.v = downbright } },
+    { MODKEY|ShiftMask,             XK_l,      spawn, {.v = lock } },
 };
 
 /* button definitions */
