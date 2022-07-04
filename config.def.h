@@ -60,7 +60,7 @@ static const Layout layouts[] = {
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%",     NULL };
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%",     NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "@DEFAULT_SINK@", "toggle",  NULL };
-static const char *mutemic[] = { "/usr/bin/pactl", "set-source-mute",   "@DEFAULT_SOURCE@", "toggle",  NULL };
+static const char *mutemic[] = { "/usr/bin/pactl", "set-source-mute", "@DEFAULT_SOURCE@", "toggle",  NULL };
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
@@ -102,10 +102,10 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-    { 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } }
-	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } }
-	{ 0,                       XF86XK_AudioMute, spawn, {.v = mutevol } }
-	{ 0,                       XF86XK_AudioMicMute, spawn, {.v = mutemic   } }
+    { 0,                            XF86XK_AudioLowerVolume,    spawn, {.v = downvol } },
+	{ 0,                            XF86XK_AudioRaiseVolume,    spawn, {.v = upvol   } },
+	{ 0,                            XF86XK_AudioMute,           spawn, {.v = mutevol } },
+	{ 0,                            XF86XK_AudioMicMute,        spawn, {.v = mutemic } },
 };
 
 /* button definitions */
