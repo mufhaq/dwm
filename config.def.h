@@ -63,8 +63,8 @@ static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "@DEFAULT_
 static const char *mutemic[] = { "/usr/bin/pactl", "set-source-mute", "@DEFAULT_SOURCE@", "toggle",  NULL };
 
 /* brightness */
-static const char *upbright[]   = { "/usr/bin/xbacklight", "-inc", "5" }
-static const char *downbright[] = { "/usr/bin/xbacklight", "-dec", "5" }
+static const char *upbright[]   = { "/usr/bin/xbacklight", "-inc", "5" };
+static const char *downbright[] = { "/usr/bin/xbacklight", "-dec", "5" };
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
