@@ -7,7 +7,8 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = {
-    "FiraCode Nerd Font:style=Medium:size=10:antialias=true:autohint=true",
+    "JetBrainsMono Nerd Font:style=Medium",
+    //"FiraCode Nerd Font:style=Medium:size=10:antialias=true:autohint=true",
     //"NotoMono Nerd Font:style=Book:size=10",
     //"NotoMono Nerd Font Mono:style=Book:size=10",
     //"NotoEmoji Nerd Font Mono:style=Book:size=10",
