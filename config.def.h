@@ -2,18 +2,18 @@
 #include <X11/XF86keysym.h>
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = {
-    "JetBrainsMono Nerd Font:style=Medium:pixelsize=14",
+    "JetBrainsMono Nerd Font:style=Medium:size=10",
     //"NotoMono Nerd Font:style=Book:size=10",
     //"NotoMono Nerd Font Mono:style=Book:size=10",
     //"NotoEmoji Nerd Font Mono:style=Book:size=10",
     //"Noto Color Emoji:style=Regular:size=10",
 };
-static const char dmenufont[]       = "JetBrainsMono Nerd Font:style=Medium:pixelsize=14";
+static const char dmenufont[]       = "JetBrainsMono Nerd Font:style=Medium:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
