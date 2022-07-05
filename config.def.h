@@ -11,7 +11,7 @@ static const char *fonts[]          = {
     "NotoMono Nerd Font:style=Book:pixelsize=14",
     "NotoMono Nerd Font Mono:style=Book:pixelsize=14",
     "NotoEmoji Nerd Font Mono:style=Book:pixelsize=14",
-    "Noto Color Emoji:style=Regular:pixelsize=14:scale=14",
+    "Noto Color Emoji:style=Regular:pixelsize=14",
 };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
