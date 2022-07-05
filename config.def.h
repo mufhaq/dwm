@@ -7,11 +7,11 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = {
-    "FiraCode Nerd Font:style=Medium:pixelsize=14;10",
-    "NotoMono Nerd Font:style=Book:pixelsize=14;10",
-    "NotoMono Nerd Font Mono:style=Book:pixelsize=14;10",
-    "NotoEmoji Nerd Font Mono:style=Book:pixelsize=14;10",
-    "Noto Color Emoji:style=Regular:pixelsize=14:scale=14;10",
+    "FiraCode Nerd Font:style=Medium:pixelsize=14",
+    "NotoMono Nerd Font:style=Book:pixelsize=14",
+    "NotoMono Nerd Font Mono:style=Book:pixelsize=14",
+    "NotoEmoji Nerd Font Mono:style=Book:pixelsize=14",
+    "Noto Color Emoji:style=Regular:pixelsize=14:scale=14",
 };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
