@@ -29,15 +29,15 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "Brave-browser",  NULL, NULL,       1,            0,           -1 },
-	{ "st-256color",  NULL,   NULL,       2,            0,           -1 },
-	{ "Alacritty",  NULL,   NULL,         2,            0,           -1 },
-    { "roblox_installer.exe", NULL, NULL, 8,            0,           -1 },
-    { "robloxplayerbeta.exe", NULL, NULL, 8,            0,           -1 },
-    { "robloxplayerlauncher.exe", NULL, NULL, 8,        0,           -1 },
+	/* class                        instance    title       tags mask       isfloating   monitor */
+	{ "Gimp",                       NULL,       NULL,       0,                  1,           -1 },
+	{ "Firefox",                    NULL,       NULL,       1 << 8,             0,           -1 },
+	{ "Brave-browser",              NULL,       NULL,       1 << 0,             0,           -1 },
+	{ "st-256color",                NULL,       NULL,       1 << 0,             0,           -1 },
+	{ "Alacritty",                  NULL,       NULL,       1 << 0,             0,           -1 },
+    { "roblox_installer.exe",       NULL,       NULL,       1 << 7,             0,           -1 },
+    { "robloxplayerbeta.exe",       NULL,       NULL,       1 << 7,             0,           -1 },
+    { "robloxplayerlauncher.exe",   NULL,       NULL,       1 << 7,             0,           -1 },
 
 };
 
