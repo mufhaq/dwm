@@ -34,7 +34,11 @@ static const Rule rules[] = {
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 	{ "Brave-browser",  NULL, NULL,       1,            0,           -1 },
 	{ "st-256color",  NULL,   NULL,       2,            0,           -1 },
-	{ "Alacritty",  NULL,   NULL,       2,            0,           -1 },
+	{ "Alacritty",  NULL,   NULL,         2,            0,           -1 },
+    { "roblox_installer.exe", NULL, NULL, 8,            0,           -1 },
+    { "robloxplayerbeta.exe", NULL, NULL, 8,            0,           -1 },
+    { "robloxplayerlauncher.exe", NULL, NULL, 8,        0,           -1 },
+
 };
 
 /* layout(s) */
