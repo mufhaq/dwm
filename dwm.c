@@ -1263,7 +1263,7 @@ quit(const Arg *arg)
 void
 quitprompt(const Arg *arg)
 {
-	FILE *pp = popen("echo -e \"no\nrestart\nyes\" | dmenu -i -sb red -p \"Quit DWM?\" -fn 'JetBrainsMono Nerd Font:style=Medium:size=10'", "r");
+	FILE *pp = popen("echo -e \"no\nrestart\nyes\" | dmenu -i -sb "#005577" -p \"Quit DWM?\" -fn 'JetBrainsMono Nerd Font:style=Medium:size=10'", "r");
 	if(pp != NULL) {
 		char buf[1024];
 		if (fgets(buf, sizeof(buf), pp) == NULL) {
