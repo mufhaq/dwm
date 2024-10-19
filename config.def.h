@@ -84,10 +84,6 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *termcmd2[] = { "alacritty", NULL };
 
-/* screenshot with PrtSc */
-static const char *PrtScFull[]      = { "/usr/bin/scrot", "~/Pictures/screenshot-%s__%d-%m-%Y_%H:%M:%S__$wx$h.png" };
-static const char *PrtScCustom[]    = { "/usr/bin/scrot", "~/Pictures/screenshot-%s__%d-%m-%Y_%H:%M:%S__$wx$h.png", "-s" };
-
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -130,8 +126,8 @@ static Key keys[] = {
 	{ 0,                            XF86XK_MonBrightnessUp,     spawn, {.v = upbright } },
 	{ 0,                            XF86XK_MonBrightnessDown,   spawn, {.v = downbright } },
     { MODKEY|ShiftMask,             XK_l,      spawn, {.v = lock } },
-    { 0,                            XK_Print,                   spawn,  {.v = PrtScFull} },
-    { ControlMask,                  XK_Print,                   spawn,  {.v = PrtScCustom} },
+    { 0,                            XK_Print,                   SHCMD("sh ./custom-scripts/screenshot.sh") },
+    { ControlMask,                  XK_Print,                   SHCMD("sh ./custom-scripts/screenshot.sh -s") },
 };
 
 /* button definitions */
