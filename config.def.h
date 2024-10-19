@@ -126,8 +126,8 @@ static Key keys[] = {
 	{ 0,                            XF86XK_MonBrightnessUp,    spawn, {.v = upbright } },
 	{ 0,                            XF86XK_MonBrightnessDown,  spawn, {.v = downbright } },
     { MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lock } },
-    { 0,                            XK_Print,  spawn,          SHCMD("custom-scripts/screenshot.sh") },
-    { ControlMask,                  XK_Print,  spawn,          SHCMD("custom-scripts/screenshot.sh -s") },
+    { 0,                            XK_Print,  spawn,          SHCMD("screenshot.sh") },
+    { ControlMask,                  XK_Print,  spawn,          SHCMD("screenshot.sh -s") },
 };
 
 /* button definitions */
