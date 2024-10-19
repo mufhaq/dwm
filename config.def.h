@@ -119,15 +119,15 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-    { 0,                            XF86XK_AudioLowerVolume,    spawn, {.v = downvol } },
-	{ 0,                            XF86XK_AudioRaiseVolume,    spawn, {.v = upvol   } },
-	{ 0,                            XF86XK_AudioMute,           spawn, {.v = mutevol } },
-	{ 0,                            XF86XK_AudioMicMute,        spawn, {.v = mutemic } },
-	{ 0,                            XF86XK_MonBrightnessUp,     spawn, {.v = upbright } },
-	{ 0,                            XF86XK_MonBrightnessDown,   spawn, {.v = downbright } },
-    { MODKEY|ShiftMask,             XK_l,      spawn, {.v = lock } },
-    { 0,                            XK_Print,                   SHCMD("sh ./custom-scripts/screenshot.sh") },
-    { ControlMask,                  XK_Print,                   SHCMD("sh ./custom-scripts/screenshot.sh -s") },
+    { 0,                            XF86XK_AudioLowerVolume,   spawn, {.v = downvol } },
+	{ 0,                            XF86XK_AudioRaiseVolume,   spawn, {.v = upvol   } },
+	{ 0,                            XF86XK_AudioMute,          spawn, {.v = mutevol } },
+	{ 0,                            XF86XK_AudioMicMute,       spawn, {.v = mutemic } },
+	{ 0,                            XF86XK_MonBrightnessUp,    spawn, {.v = upbright } },
+	{ 0,                            XF86XK_MonBrightnessDown,  spawn, {.v = downbright } },
+    { MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lock } },
+    { 0,                            XK_Print,  spawn,          SHCMD("sh ./custom-scripts/screenshot.sh") },
+    { ControlMask,                  XK_Print,  spawn,          SHCMD("sh ./custom-scripts/screenshot.sh -s") },
 };
 
 /* button definitions */
