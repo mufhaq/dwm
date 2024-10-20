@@ -11,4 +11,6 @@ fi
 if [ "$1" = "-s" ]; then
   opts+="-s"
 fi
-scrot "$ss_dir/screenshot-%s__%d-%m-%Y_%H:%M:%S__\$wx\$h.png" $opts -e "echo \$n" >> ~/.log/scrot-log
+out=$(scrot "$ss_dir/screenshot-%s__%d-%m-%Y_%H:%M:%S__\$wx\$h.png" $opts -e "echo \$n")
+notify-send 'Screenshot' "$out"
+echo "$out" >> ~/.log/scrot-log
